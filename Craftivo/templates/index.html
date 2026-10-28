@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>EV Insights | Electric Vehicle Market</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Craftivo
+  * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
+  * Updated: Oct 04 2025 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    :root{--ev-gold:#f5a900;--ev-gold2:#ffc34d;--ev-bg:#070707;--ev-card:#191919;--ev-muted:#b9b9b9}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--ev-bg);color:#f7f7f7;font-family:Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .header{background:rgba(5,5,5,.88)!important;backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);padding:12px 0;min-height:82px}
+    .header .container-fluid{max-width:1460px}
+    .sitename{font-size:30px!important;font-weight:800!important;letter-spacing:-1px;color:#fff!important}
+    .navmenu ul{gap:8px}
+    .navmenu a,.navmenu a:focus{font-size:16px;font-weight:600;color:#f4f4f4!important;padding:10px 12px!important}
+    .navmenu a:hover,.navmenu a.active{color:var(--ev-gold)!important}
+    .btn-getstarted,.ev-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;background:var(--ev-gold);color:#111!important;font-weight:700;padding:14px 25px;border:1px solid var(--ev-gold);transition:.25s}
+    .btn-getstarted:hover,.ev-btn:hover{background:var(--ev-gold2);transform:translateY(-2px);box-shadow:0 10px 28px #f5a90025}
+    .ev-outline{background:transparent;color:#fff!important;border:1px solid #4a4a4a}
+    .ev-outline:hover{border-color:var(--ev-gold);background:#f5a90012}
+    .ev-section{padding:100px 0;position:relative}
+    .ev-container{width:min(1240px,calc(100% - 42px));margin:auto}
+    .ev-eyebrow{display:inline-block;color:var(--ev-gold);text-transform:uppercase;letter-spacing:2.5px;font-size:12px;font-weight:800;margin-bottom:16px}
+    .ev-title{font-size:clamp(32px,4vw,48px);font-weight:800;letter-spacing:-1.5px;line-height:1.12;margin:0 0 18px}
+    .ev-lead{color:#c7c7c7;font-size:18px;line-height:1.8;max-width:760px}
+    #hero{min-height:720px;padding:150px 0 80px;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,#352000 0%,#100b04 25%,#070707 62%)}
+    .hero-grid{display:grid;grid-template-columns:1fr;justify-items:center;text-align:center;position:relative;z-index:1}
+    .hero-copy{max-width:850px}
+    .hero-copy h2{font-size:clamp(42px,5vw,68px);font-weight:900;line-height:1.08;letter-spacing:-2.5px;margin:0 auto 24px}
+    .hero-copy h2 span{background:linear-gradient(90deg,#ffb000,#d68e83);background-clip:text;-webkit-background-clip:text;color:transparent}
+    .hero-copy p{font-size:19px;line-height:1.8;color:#d1d1d1;max-width:700px;margin:0 auto 32px}
+    .hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:58px}
+    .hero-preview{width:min(900px,100%);min-height:260px;border:1px solid #303030;border-radius:24px;padding:18px;background:linear-gradient(135deg,#1c1c1c,#0b0b0b);box-shadow:0 30px 90px #0009;position:relative}
+    .preview-top{display:flex;gap:7px;padding:4px 4px 18px}.preview-top i{width:8px;height:8px;border-radius:50%;background:#555}
+    .preview-content{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .preview-stat{background:#111;border:1px solid #292929;border-radius:12px;padding:18px;text-align:left}
+    .preview-stat small{color:#aaa;display:block;margin-bottom:9px}.preview-stat strong{font-size:25px}.preview-stat strong em{font-size:13px;color:#75c978;font-style:normal}
+    .mini-bars{height:100px;display:flex;align-items:end;gap:10px;padding:8px 12px 0}
+    .mini-bars span{display:block;flex:1;background:linear-gradient(#ffc34d,#e78b00);border-radius:5px 5px 0 0}
+    .float-badge{position:absolute;left:-48px;bottom:20px;background:#1c1c1c;border:1px solid #333;border-radius:15px;padding:18px 22px;box-shadow:0 12px 35px #0008;text-align:left}
+    .float-badge strong{font-size:25px;display:block}.float-badge span{color:#aaa;font-size:13px}
+    .ev-about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+    .ev-photo{min-height:440px;border-radius:18px;background:linear-gradient(180deg,#0000,#0008),url('https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:0 25px 70px #0007}
+    .ev-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:34px}
+    .ev-card{background:var(--ev-card);border:1px solid #222;border-radius:13px;padding:25px;transition:.25s}
+    .ev-card:hover{transform:translateY(-5px);border-color:#684800}
+    .ev-card .bi{font-size:30px;color:var(--ev-gold);display:block;margin-bottom:18px}
+    .ev-card h3{font-size:19px;margin-bottom:12px}.ev-card p{color:#c0c0c0;line-height:1.7;margin:0}
+    .ev-dashboard-wrap{background:#e6f6e3;padding:18px;border-radius:18px;box-shadow:0 24px 70px #0007;overflow:hidden}.tableauPlaceholder{width:100%;min-height:520px}.tableauPlaceholder object{width:100%;border:0}
+    .ev-dashboard-frame{width:100%;min-height:700px;border:0;border-radius:10px;background:#fff}
+    .embed-note{color:#d4d4d4;background:#151515;border:1px dashed #555;border-radius:12px;padding:28px;line-height:1.8}
+    .embed-note code{color:#ffd06b;overflow-wrap:anywhere}
+    .story-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:38px}
+    .story-card{background:#141414;border:1px solid #292929;border-radius:16px;padding:26px}
+    .story-card .number{font-size:34px;font-weight:900;color:var(--ev-gold);margin-bottom:14px}
+    .story-card h3{font-size:20px}.story-card p{color:#bcbcbc;line-height:1.75}
+    .ev-callout{margin-top:36px;padding:32px;border-radius:18px;background:linear-gradient(110deg,#261a05,#15110a 55%,#181818);border:1px solid #49340c;display:flex;justify-content:space-between;gap:25px;align-items:center}
+    .ev-callout h3{font-size:25px;margin:0 0 8px}.ev-callout p{color:#c7c7c7;margin:0}
+    .ev-footer{padding:35px 0;border-top:1px solid #222;color:#aaa;text-align:center}
+    #scroll-top{background:var(--ev-gold)!important;color:#111!important}
+    @media(max-width:1100px){.navmenu ul{gap:0}.navmenu a{padding:8px!important}.btn-getstarted{padding:11px 16px}.ev-about-grid{gap:30px}}
+    @media(max-width:850px){.ev-section{padding:75px 0}#hero{padding-top:130px}.ev-about-grid{grid-template-columns:1fr}.ev-photo{min-height:330px}.story-grid{grid-template-columns:1fr 1fr}.float-badge{left:10px;bottom:10px}.ev-dashboard-frame{min-height:540px}}
+    @media(max-width:600px){.sitename{font-size:24px!important}.hero-copy h2{letter-spacing:-1.3px}.hero-copy p{font-size:16px}.preview-content{grid-template-columns:1fr}.preview-stat:nth-child(n+3){display:none}.hero-preview{min-height:230px}.ev-cards,.story-grid{grid-template-columns:1fr}.ev-callout{align-items:flex-start;flex-direction:column}.ev-dashboard-wrap{padding:7px}.ev-dashboard-frame{min-height:430px}}
+  </style>
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="#hero" class="logo d-flex align-items-center me-auto"><h1 class="sitename">EV Insights</h1></a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#story">Story</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted d-none d-lg-inline-flex" href="#dashboard">Explore Dashboard</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="ev-section">
+      <div class="ev-container hero-grid">
+        <div class="hero-copy" data-aos="fade-up">
+          <span class="ev-eyebrow">Electric mobility, made clearer</span>
+          <h2>Transform Your Workflow With<br><span>Seamless EV Insights</span></h2>
+          <p>Explore EV market intelligence, adoption trends, and the story behind the growth of electric mobility through a polished dashboard and narrative experience.</p>
+          <div class="hero-actions">
+            <a href="#dashboard" class="ev-btn">Explore the Dashboard <i class="bi bi-arrow-right"></i></a>
+            <a href="#story" class="ev-btn ev-outline"><i class="bi bi-book"></i> Explore Story</a>
+          </div>
+        </div>
+        <div class="hero-preview" data-aos="fade-up" data-aos-delay="150" aria-label="Illustrative EV market dashboard preview">
+          <div class="preview-top"><i></i><i></i><i></i></div>
+          <div class="preview-content">
+            <div class="preview-stat"><small>Annual EV sales</small><strong>1.55B <em>↗</em></strong><div class="mini-bars"><span style="height:35%"></span><span style="height:48%"></span><span style="height:43%"></span><span style="height:66%"></span><span style="height:78%"></span><span style="height:95%"></span></div></div>
+            <div class="preview-stat"><small>Customer rating</small><strong>4.0/5</strong><p style="color:#aaa;font-size:13px;margin:15px 0 0">Customer experience across EV categories</p><div class="mini-bars"><span style="height:70%"></span><span style="height:55%"></span><span style="height:88%"></span><span style="height:76%"></span><span style="height:92%"></span></div></div>
+            <div class="preview-stat"><small>Battery capacity</small><strong>78.2 <em>kWh</em></strong><p style="color:#aaa;font-size:13px;margin:15px 0 0">Technology driving electric mobility</p><div class="mini-bars"><span style="height:45%"></span><span style="height:58%"></span><span style="height:66%"></span><span style="height:82%"></span><span style="height:94%"></span></div></div>
+          </div>
+          <div class="float-badge"><strong>89%</strong><span>Success Benchmark</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="ev-section">
+      <div class="ev-container ev-about-grid">
+        <div class="ev-photo" role="img" aria-label="Electric vehicle charging"></div>
+        <div data-aos="fade-left">
+          <span class="ev-eyebrow">About the project</span>
+          <h2 class="ev-title">Insights Behind the EV Story</h2>
+          <p class="ev-lead">Tracking adoption, momentum, and market transformation.</p>
+          <p style="color:#ddd;line-height:1.85">The EV market is moving fast, and the data reveals a story: demand is changing, battery technology is advancing, and consumer expectations are evolving. EV Insights turns market data into clear visual evidence that helps people explore the forces shaping electric mobility.</p>
+          <div class="ev-cards" id="features">
+            <article class="ev-card"><i class="bi bi-graph-up-arrow"></i><h3>Market Growth</h3><p>Explore adoption patterns, annual sales, and the manufacturers shaping the market.</p></article>
+            <article class="ev-card"><i class="bi bi-lightning-charge"></i><h3>Technology Shift</h3><p>Compare battery technologies, capacity, and driving range across EV models.</p></article>
+            <article class="ev-card"><i class="bi bi-people"></i><h3>Consumer Confidence</h3><p>Understand customer ratings and how they vary across vehicle categories.</p></article>
+            <article class="ev-card"><i class="bi bi-bar-chart-line"></i><h3>Actionable Insights</h3><p>Use filters and interactive visuals to explore patterns in the available dataset.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="ev-section" style="background:#0d0d0d">
+      <div class="ev-container">
+        <span class="ev-eyebrow">What you can explore</span>
+        <h2 class="ev-title">One market. Multiple perspectives.</h2>
+        <p class="ev-lead">Navigate the most important dimensions of the electric vehicle ecosystem from a single experience.</p>
+        <div class="story-grid">
+          <article class="story-card"><div class="number"><i class="bi bi-car-front"></i></div><h3>Vehicle Categories</h3><p>Compare scooters, hatchbacks, sedans, SUVs, trucks, and other EV segments.</p></article>
+          <article class="story-card"><div class="number"><i class="bi bi-buildings"></i></div><h3>Manufacturer Performance</h3><p>Review sales distribution and compare manufacturers using the dashboard filters.</p></article>
+          <article class="story-card"><div class="number"><i class="bi bi-globe2"></i></div><h3>Global Footprint</h3><p>Explore how the dataset represents EV manufacturing across countries.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="ev-section">
+      <div class="ev-container">
+        <span class="ev-eyebrow">Interactive analytics</span>
+        <h2 class="ev-title">EV Market Dashboard</h2>
+        <p class="ev-lead">Use the embedded Tableau dashboard to inspect market indicators, compare categories, and filter the data.</p>
+        <div class="ev-dashboard-wrap">
+          <div class="tableauPlaceholder" id="viz1793188925259" style="position: relative; width: 100%;">
+            <noscript>
+              <a href="https://public.tableau.com/">
+                <img alt="EV Market Dashboard" src="https://public.tableau.com/static/images/EV/EVMarket_17931839418530/Dashboard1/1_rss.png" style="border: none; width: 100%;" />
+              </a>
+            </noscript>
+            <object class="tableauViz" style="display:none; width:100%;">
+              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+              <param name="embed_code_version" value="3" />
+              <param name="site_root" value="" />
+              <param name="name" value="EVMarket_17931839418530%2FDashboard1" />
+              <param name="tabs" value="no" />
+              <param name="toolbar" value="yes" />
+              <param name="static_image" value="https://public.tableau.com/static/images/EV/EVMarket_17931839418530/Dashboard1/1.png" />
+              <param name="animate_transition" value="yes" />
+              <param name="display_static_image" value="yes" />
+              <param name="display_spinner" value="yes" />
+              <param name="display_overlay" value="yes" />
+              <param name="display_count" value="yes" />
+              <param name="language" value="en-US" />
+              <param name="filter" value="publish=yes" />
+            </object>
+          </div>
+        </div>
+        <p class="embed-note" style="margin-top:16px">Interact with the dashboard to explore EV categories, manufacturers, sales trends, battery technology, and manufacturing locations.</p>
+        <script>
+          (function () {
+            var divElement = document.getElementById('viz1793188925259');
+            if (!divElement) return;
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            function sizeTableauViz() {
+              var width = divElement.offsetWidth || divElement.parentElement.offsetWidth || 800;
+              vizElement.style.width = '100%';
+              vizElement.style.height = (width > 500 ? Math.round(width * 0.68) : 650) + 'px';
+            }
+            sizeTableauViz();
+            window.addEventListener('resize', sizeTableauViz);
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            scriptElement.onload = sizeTableauViz;
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          })();
+        </script>
+      </div>
+    </section>
+
+    <section id="story" class="ev-section" style="background:#0d0d0d">
+      <div class="ev-container">
+        <span class="ev-eyebrow">Data storytelling</span>
+        <h2 class="ev-title">Global EV Market Analysis</h2>
+        <p class="ev-lead">Explore the interactive Tableau story to understand EV market trends, battery technologies, customer preferences, and global manufacturing.</p>
+        <div class="ev-dashboard-wrap">
+          <div class="tableauPlaceholder" id="viz1793192079477" style="position: relative; width: 100%;">
+            <noscript>
+              <a href="https://public.tableau.com/views/EVMarketStory/Story1">
+                <img alt="Global EV Market Analysis" src="https://public.tableau.com/static/images/EV/EVMarketStory/Story1/1_rss.png" style="border: none; width: 100%;" />
+              </a>
+            </noscript>
+            <object class="tableauViz" style="display:none; width:100%;">
+              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+              <param name="embed_code_version" value="3" />
+              <param name="site_root" value="" />
+              <param name="name" value="EVMarketStory%2FStory1" />
+              <param name="tabs" value="no" />
+              <param name="toolbar" value="yes" />
+              <param name="static_image" value="https://public.tableau.com/static/images/EV/EVMarketStory/Story1/1.png" />
+              <param name="animate_transition" value="yes" />
+              <param name="display_static_image" value="yes" />
+              <param name="display_spinner" value="yes" />
+              <param name="display_overlay" value="yes" />
+              <param name="display_count" value="yes" />
+              <param name="language" value="en-US" />
+              <param name="filter" value="publish=yes" />
+            </object>
+          </div>
+        </div>
+        <p class="embed-note" style="margin-top:16px">Use the story navigation inside Tableau to move through the different views and insights.</p>
+        <script>
+          (function () {
+            var divElement = document.getElementById('viz1793192079477');
+            if (!divElement) return;
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            function sizeTableauStory() {
+              var width = divElement.offsetWidth || divElement.parentElement.offsetWidth || 800;
+              vizElement.style.width = '100%';
+              vizElement.style.height = (width > 500 ? Math.round(width * 0.75) : 900) + 'px';
+            }
+            sizeTableauStory();
+            window.addEventListener('resize', sizeTableauStory);
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            scriptElement.onload = sizeTableauStory;
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          })();
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ev-footer">
+    <div class="ev-container">© <span id="year"></span> <strong>EV Insights</strong> · Electric Vehicle Market Dashboard & Story</div>
+  </footer>
+  <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/typed.js/typed.umd.js"></script>
+  <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('#navmenu a[href^="#"]').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelectorAll('#navmenu a').forEach(item => item.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
